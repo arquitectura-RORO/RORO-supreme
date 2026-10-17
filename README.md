@@ -2,7 +2,7 @@
 
 -Introducción
 
-En esta práctica se implementa la arquitectura RORO Supreme, un sistema que integra una memoria ROM de instrucciones de 12 bits, dos memorias ROM de operandos llamadas ROMa y ROMina, y la unidad aritmético-lógica ALUMIPS. Al ir toreando los retos de sincronización y decodificación en Verilog, logramos coordinar la lectura de operandos de 32 bits y la evaluación de resultados junto con la bandera de cero ZF.
+En esta práctica se implementa la arquitectura RORO Supreme, un sistema que integra una memoria ROM de instrucciones de 12 bits, dos memorias ROM de operandos llamadas ROMa y ROMina, y la unidad aritmético-lógica ALUMIPS. Al ir haciendo los retos de sincronización y decodificación en Verilog, logramos coordinar la lectura de operandos de 32 bits y la evaluación de resultados junto con la bandera de cero ZF.
 
 
 -Objetivo
@@ -20,7 +20,12 @@ Desarrollar los testbenches con comprobaciones automáticas de tipo PASS y FAIL 
 
 -Desarrollo
 
-El proyecto se realizó dividiéndolo en varias etapas prácticas en Verilog. Primero se inspeccionaron las interfaces de los módulos ROM, ALUMIPS y RORO proporcionados en clase sin modificar su lógica fundamental. Después construimos dos instancias para ROMa y ROMina cargadas desde archivos independientes mediante readmemb. En tercer lugar diseñamos la ROM de instrucciones de 16 posiciones y palabras de 12 bits inicializada con el archivo de instrucciones. En cuarto lugar desarrollamos el módulo superior RORO Supreme conectando la instrucción, ambas memorias ROM y la ALU. En quinto y sexto lugar escribimos los testbenches RORO_tb para verificar el bloque de ROM y ALU, y RORO_Supreme_tb para recorrer las 16 instrucciones comprobando los resultados y las banderas. Mientras fuimos resolviendo los detalles de sincronización, integramos todos los archivos necesarios y documentamos las 16 operaciones obligatorias que distribuyen seis sumas, seis restas y cuatro comparaciones SLT utilizando las 16 direcciones de las ROMs.
+El proyecto se realizó dividiéndolo en varias etapas prácticas en Verilog. Primero se inspeccionaron las interfaces de los módulos ROM, ALUMIPS y RORO proporcionados en clase sin modificar su lógica fundamental. Después construimos dos instancias para ROMa y ROMina cargadas desde archivos independientes mediante readmemb.
+
+<img width="1000" height="585" alt="33333333333" src="https://github.com/user-attachments/assets/ce7c933a-278c-48eb-b1e3-adb85896939e" />
+
+
+En tercer lugar diseñamos la ROM de instrucciones de 16 posiciones y palabras de 12 bits inicializada con el archivo de instrucciones. En cuarto lugar desarrollamos el módulo superior RORO Supreme conectando la instrucción, ambas memorias ROM y la ALU. En quinto y sexto lugar escribimos los testbenches RORO_tb para verificar el bloque de ROM y ALU, y RORO_Supreme_tb para recorrer las 16 instrucciones comprobando los resultados y las banderas. Mientras fuimos resolviendo los detalles de sincronización, integramos todos los archivos necesarios y documentamos las 16 operaciones obligatorias que distribuyen seis sumas, seis restas y cuatro comparaciones SLT utilizando las 16 direcciones de las ROMs.
 
 | Dir | OP | ROMa | ROMina | DD esperado | ZF esperado |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -48,11 +53,13 @@ El banco de pruebas recorrió las dieciséis instrucciones del programa obligato
 
 1. Registro Completo de Consola (Prueba PASS de las 16 Instrucciones)
 
-2. Formas de Onda de las Sumas (Direcciones 0 a 5: seis sumas en total)
+2. Sumas (Direcciones 0 a 5: seis sumas en total)
 
-3. Formas de Onda de las Restas (Direcciones 6 a 11: seis restas en total)
+3. Restas (Direcciones 6 a 11: seis restas en total)
 
-4. Formas de Onda de las Comparaciones SLT (Direcciones 12 a 15: cuatro comparaciones SLT en total)
+4. Comparaciones SLT (Direcciones 12 a 15: cuatro comparaciones SLT en total)
+
+<img width="1000" height="591" alt="22222222222" src="https://github.com/user-attachments/assets/4a5a82be-0db9-4a24-af1c-312eca5097de" />
 
 Explicación de casos obligatorios:
 
