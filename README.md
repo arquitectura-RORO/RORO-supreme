@@ -51,6 +51,9 @@ En tercer lugar diseñamos la ROM de instrucciones de 16 posiciones y palabras d
 
 El banco de pruebas recorrió las dieciséis instrucciones del programa obligatorio generando un registro exitoso de tipo PASS en cada caso. A continuación se presentan las evidencias que demuestran el funcionamiento de las dieciséis operaciones solicitadas:
 
+<img width="1000" height="593" alt="2222222wqe2222" src="https://github.com/user-attachments/assets/0561514b-031f-4a24-a299-e51ace0574db" />
+
+
 1. Registro Completo de Consola (Prueba PASS de las 16 Instrucciones)
 
 2. Sumas (Direcciones 0 a 5: seis sumas en total)
