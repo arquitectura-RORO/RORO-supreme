@@ -22,6 +22,8 @@ Desarrollar los testbenches con comprobaciones automáticas de tipo PASS y FAIL 
 
 El proyecto se realizó dividiéndolo en varias etapas prácticas en Verilog. Primero se inspeccionaron las interfaces de los módulos ROM, ALUMIPS y RORO proporcionados en clase sin modificar su lógica fundamental. Después construimos dos instancias para ROMa y ROMina cargadas desde archivos independientes mediante readmemb.
 
+<img width="1000" height="591" alt="22222222222" src="https://github.com/user-attachments/assets/4a5a82be-0db9-4a24-af1c-312eca5097de" />
+
 <img width="1000" height="585" alt="33333333333" src="https://github.com/user-attachments/assets/ce7c933a-278c-48eb-b1e3-adb85896939e" />
 
 
@@ -51,9 +53,6 @@ En tercer lugar diseñamos la ROM de instrucciones de 16 posiciones y palabras d
 
 El banco de pruebas recorrió las dieciséis instrucciones del programa obligatorio generando un registro exitoso de tipo PASS en cada caso. A continuación se presentan las evidencias que demuestran el funcionamiento de las dieciséis operaciones solicitadas:
 
-<img width="1000" height="593" alt="2222222wqe2222" src="https://github.com/user-attachments/assets/0561514b-031f-4a24-a299-e51ace0574db" />
-
-
 1. Registro Completo de Consola (Prueba PASS de las 16 Instrucciones)
 
 2. Sumas (Direcciones 0 a 5: seis sumas en total)
@@ -62,7 +61,7 @@ El banco de pruebas recorrió las dieciséis instrucciones del programa obligato
 
 4. Comparaciones SLT (Direcciones 12 a 15: cuatro comparaciones SLT en total)
 
-<img width="1000" height="591" alt="22222222222" src="https://github.com/user-attachments/assets/4a5a82be-0db9-4a24-af1c-312eca5097de" />
+<img width="1000" height="593" alt="2222222wqe2222" src="https://github.com/user-attachments/assets/0561514b-031f-4a24-a299-e51ace0574db" />
 
 Explicación de casos obligatorios:
 
