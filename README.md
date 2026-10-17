@@ -26,6 +26,8 @@ El proyecto se realizó dividiéndolo en varias etapas prácticas en Verilog. Pr
 
 <img width="1000" height="585" alt="33333333333" src="https://github.com/user-attachments/assets/ce7c933a-278c-48eb-b1e3-adb85896939e" />
 
+<img width="1000" height="597" alt="666666666" src="https://github.com/user-attachments/assets/d9269012-fa1e-4dec-9f65-d0a421caf9b7" />
+
 
 En tercer lugar diseñamos la ROM de instrucciones de 16 posiciones y palabras de 12 bits inicializada con el archivo de instrucciones. En cuarto lugar desarrollamos el módulo superior RORO Supreme conectando la instrucción, ambas memorias ROM y la ALU. En quinto y sexto lugar escribimos los testbenches RORO_tb para verificar el bloque de ROM y ALU, y RORO_Supreme_tb para recorrer las 16 instrucciones comprobando los resultados y las banderas. Mientras fuimos resolviendo los detalles de sincronización, integramos todos los archivos necesarios y documentamos las 16 operaciones obligatorias que distribuyen seis sumas, seis restas y cuatro comparaciones SLT utilizando las 16 direcciones de las ROMs.
 
@@ -68,6 +70,9 @@ Explicación de casos obligatorios:
 Caso de Resta Negativa (Dirección 9): En la dirección nueve, al restar nueve menos cincuenta, la ALU procesa un resultado negativo que se interpreta en complemento a dos como un patrón de treinta y dos bits equivalente a 4294967255, manteniendo la bandera de cero en cero.
 
 Caso de Resultado Cero y ZF Activa (Direcciones 6 y 11): En las direcciones seis y once, al restar dos menos dos u operar ceros, el bus de datos entrega un valor de cero, activando la bandera ZF en uno únicamente cuando el resultado DD es igual a cero según lo requerido.
+
+<img width="1000" height="604" alt="5555555" src="https://github.com/user-attachments/assets/f2340e9e-856f-4b96-b5d9-8ed1e12ceb14" />
+
 
 
 -Conclusión
