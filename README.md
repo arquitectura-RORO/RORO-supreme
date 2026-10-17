@@ -1,7 +1,7 @@
 # RORO-supreme
-García Samaniego Diego Emmanuel
-Montaño Padilla Jessica Fabiola
-Barajas Yañez Valeria
+García Samaniego Diego Emmanuel.
+Montaño Padilla Jessica Fabiola.
+Barajas Yañez Valeria.
 
 -Introducción
 
