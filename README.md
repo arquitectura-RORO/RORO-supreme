@@ -2,6 +2,7 @@
 García Samaniego Diego Emmanuel
 Montaño Padilla Jessica Fabiola
 Barajas Yañez Valeria
+
 -Introducción
 
 En esta práctica se implementa la arquitectura RORO Supreme, un sistema que integra una memoria ROM de instrucciones de 12 bits, dos memorias ROM de operandos llamadas ROMa y ROMina, y la unidad aritmético-lógica ALUMIPS. Al ir haciendo los retos de sincronización y decodificación en Verilog, logramos coordinar la lectura de operandos de 32 bits y la evaluación de resultados junto con la bandera de cero ZF.
